@@ -100,6 +100,30 @@ a {
   line-height: 1.25;
   padding: 9px 38px 8px 38px;
   margin-left: 212px;
+  margin-right: 40px;
+}
+
+.header-language-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header-language-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.header-language-item:hover {
+  box-shadow: -2px 3px 7px -1px rgb(26, 255, 26);
+}
+
+.header-language-link {
+  color: #000;
+  font-family: Hammersmith One, sans-serif;
+  line-height: 1.25;
 }
 
 .hero {
@@ -177,6 +201,14 @@ a {
   display: block;
 }
 
+.btn-eng-amount {
+  width: 111px;
+}
+
+.hero-eng-btn {
+  padding: 25px 75px;
+}
+
 .quote {
   padding-top: 75px;
   padding-bottom: 10px;
@@ -237,6 +269,10 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
+}
+
+.trailer-eng-link {
+  padding: 25px 17px;
 }
 
 .language {
@@ -353,7 +389,7 @@ a {
 .footer-position {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .footer .logo {
@@ -362,16 +398,18 @@ a {
 
 .logo-wrapper {
   border-right: 2px solid #fff;
-}
-
-.footer-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-list {
-  width: 689px;
+.footer-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item:nth-child(1) {
+  margin-bottom: 16px;
 }
 
 .footer-item-title {
