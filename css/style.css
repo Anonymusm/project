@@ -92,15 +92,16 @@ a {
 .header-btn {
   border-radius: 45px 0px;
   border: 2px solid #26c7ea;
+  padding: 9px 38px 8px 38px;
+  margin-left: 212px;
+  margin-right: 40px;
+
   background: #0b0e66;
   color: #26c7ea;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
-  padding: 9px 38px 8px 38px;
-  margin-left: 212px;
-  margin-right: 40px;
 }
 
 .header-language-list {
@@ -156,12 +157,13 @@ a {
 
 .hero-text::after {
   content: "";
-  background-image: url("../images/symbol.png");
-  background-repeat: no-repeat;
   display: block;
   height: 40px;
   width: 152px;
   margin: 0 auto;
+
+  background-image: url("../images/symbol.png");
+  background-repeat: no-repeat;
 }
 
 .text-wrapper {
@@ -184,16 +186,17 @@ a {
 }
 
 .hero-btn {
+  padding: 10px 30px;
+  margin-top: 42px;
   border-radius: 45px 0px;
   border: 3px solid #26c7ea;
+
   background: #0b0e66;
   color: #26c7ea;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
-  padding: 10px 30px;
-  margin-top: 42px;
 }
 
 .btn-amount {
@@ -215,33 +218,36 @@ a {
 }
 
 .quote-title {
+  margin-bottom: 16px;
+
   color: #141414;
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.222;
-  margin-bottom: 16px;
 }
 
 .quote-name {
+  margin-bottom: 8px;
+
   color: #000;
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.208;
-  margin-bottom: 8px;
 }
 
 .quote-name::after {
   content: "";
-  background-image: url(../images/symbol-bird.png);
-  background-repeat: no-repeat;
   height: 120px;
   display: block;
   margin: 0 auto;
   width: 400px;
+
+  background-image: url(../images/symbol-bird.png);
+  background-repeat: no-repeat;
 }
 
 .trailer {
@@ -262,8 +268,9 @@ a {
 .trailer-link {
   border-radius: 45px 0px;
   border: 3px solid #26c7ea;
-  background: #0b0e66;
   padding: 25px 20px;
+
+  background: #0b0e66;
   color: #26c7ea;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
@@ -286,13 +293,14 @@ a {
 }
 
 .language-title {
+  margin-bottom: 45px;
+
   color: #141414;
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
-  margin-bottom: 45px;
 }
 
 .language-list {
@@ -305,41 +313,45 @@ a {
 }
 
 .language-item {
-  flex-basis: calc(100% / 3 - 36px);
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 36px 0;
+  flex-basis: calc(100% / 3 - 36px);
+
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .symbol-weapon::after {
   content: "";
-  background-image: url("../images/symbol-weapon.png");
-  height: 40px;
-  display: block;
-  background-repeat: no-repeat;
   width: 152px;
   margin: 0 auto;
+  height: 40px;
+  display: block;
+
+  background-image: url("../images/symbol-weapon.png");
+  background-repeat: no-repeat;
 }
 
 .symbol-bird::after {
   content: "";
-  background-image: url("../images/symbol-bird.png");
-  height: 40px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 152px 40px;
   width: 152px;
   margin: 0 auto;
+  height: 40px;
+  display: block;
+
+  background-repeat: no-repeat;
+  background-size: 152px 40px;
+  background-image: url("../images/symbol-bird.png");
 }
 
 .reverse-symbol::after {
   content: "";
-  background-image: url("../images/reverse-symbol.png");
-  height: 40px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 152px 40px;
   width: 152px;
   margin: 0 auto;
+  height: 40px;
+  display: block;
+  background-image: url("../images/reverse-symbol.png");
+
+  background-repeat: no-repeat;
+  background-size: 152px 40px;
 }
 
 .reverse-symbol::after,
@@ -351,23 +363,25 @@ a {
 }
 
 .language-item-title {
+  margin-bottom: 40px;
+
   color: #141414;
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 40px;
 }
 
 .language-item-translate {
+  margin-top: 40px;
+
   color: #000;
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
-  margin-top: 40px;
 }
 
 .footer {
@@ -413,28 +427,30 @@ a {
 }
 
 .footer-item-title {
+  margin-right: 20px;
+  padding-left: 80px;
+
   color: #fff;
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  margin-right: 20px;
-  padding-left: 80px;
 }
 
 .footer-item-link {
+  margin-left: 20px;
+
   color: #fff;
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
-  margin-left: 20px;
 }
 
 .copy {
-  text-align: center;
   margin-top: 37px;
 
+  text-align: center;
   color: #fff;
   font-family: Inter, sans-serif;
   font-size: 14px;
