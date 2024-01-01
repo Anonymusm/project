@@ -1,5 +1,13 @@
+:root {
+  --main-color: #26c7ea;
+  --accent-color: #000;
+  --btn-bg-color: #0b0e66;
+  --text-color: #fff;
+  --add-color: #141414;
+}
+
 .container {
-  width: 1218px;
+  width: 1037px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -49,7 +57,7 @@ a {
 
 .header {
   padding: 39px 0;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid var(--text-color);
   max-width: 1540px;
   margin: 0 auto;
 
@@ -75,10 +83,11 @@ a {
   align-items: center;
   margin-left: 168px;
   column-gap: 38px;
+  width: 325px;
 }
 
 .navigation-link {
-  color: #fff;
+  color: var(--text-color);
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -91,13 +100,13 @@ a {
 
 .header-btn {
   border-radius: 45px 0px;
-  border: 2px solid #26c7ea;
+  border: 2px solid var(--main-color);
   padding: 9px 38px 8px 38px;
-  margin-left: 212px;
-  margin-right: 40px;
+  margin-left: 210px;
+  margin-right: 47px;
 
-  background: #0b0e66;
-  color: #26c7ea;
+  background: var(--btn-bg-color);
+  color: var(--main-color);
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -109,20 +118,21 @@ a {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
+  width: 107px;
 }
 
 .header-language-item {
-  background-color: #fff;
+  background-color: var(--text-color);
   padding: 10px;
   border-radius: 15px;
 }
 
 .header-language-item:hover {
-  box-shadow: -2px 3px 7px -1px rgb(26, 255, 26);
+  box-shadow: -2px 3px 7px 1px rgb(26, 255, 26);
 }
 
 .header-language-link {
-  color: #000;
+  color: var(--accent-color);
   font-family: Hammersmith One, sans-serif;
   line-height: 1.25;
 }
@@ -144,7 +154,7 @@ a {
 
 .hero-text,
 .hero-translate-text {
-  color: #fff;
+  color: var(--text-color);
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -189,10 +199,10 @@ a {
   padding: 10px 30px;
   margin-top: 42px;
   border-radius: 45px 0px;
-  border: 3px solid #26c7ea;
+  border: 3px solid var(--main-color);
 
-  background: #0b0e66;
-  color: #26c7ea;
+  background: var(--btn-bg-color);
+  color: var(--main-color);
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -220,7 +230,7 @@ a {
 .quote-title {
   margin-bottom: 16px;
 
-  color: #141414;
+  color: var(--add-color);
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 36px;
@@ -231,7 +241,7 @@ a {
 .quote-name {
   margin-bottom: 8px;
 
-  color: #000;
+  color: var(--accent-color);
   text-align: center;
   font-family: Inter, sans-serif;
   font-size: 24px;
@@ -267,11 +277,11 @@ a {
 
 .trailer-link {
   border-radius: 45px 0px;
-  border: 3px solid #26c7ea;
+  border: 3px solid var(--main-color);
   padding: 25px 20px;
 
-  background: #0b0e66;
-  color: #26c7ea;
+  background: var(--btn-bg-color);
+  color: var(--main-color);
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -295,7 +305,7 @@ a {
 .language-title {
   margin-bottom: 45px;
 
-  color: #141414;
+  color: var(--add-color);
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 32px;
@@ -365,7 +375,7 @@ a {
 .language-item-title {
   margin-bottom: 40px;
 
-  color: #141414;
+  color: var(--add-color);
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
@@ -376,7 +386,7 @@ a {
 .language-item-translate {
   margin-top: 40px;
 
-  color: #000;
+  color: var(--accent-color);
   text-align: center;
   font-family: HeadlandOne, sans-serif;
   font-size: 24px;
@@ -411,7 +421,7 @@ a {
 }
 
 .logo-wrapper {
-  border-right: 2px solid #fff;
+  border-right: 2px solid var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -426,11 +436,15 @@ a {
   margin-bottom: 16px;
 }
 
+.footer-coop-item {
+  min-width: 769px;
+}
+
 .footer-item-title {
   margin-right: 20px;
   padding-left: 80px;
 
-  color: #fff;
+  color: var(--text-color);
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -440,7 +454,7 @@ a {
 .footer-item-link {
   margin-left: 20px;
 
-  color: #fff;
+  color: var(--text-color);
   font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -451,7 +465,7 @@ a {
   margin-top: 37px;
 
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
