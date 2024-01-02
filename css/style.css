@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 1037px;
+  width: 1062px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -29,7 +29,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -240,6 +239,21 @@ a {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.222;
+}
+
+.quote-title-amount:nth-child(1) {
+  width: 1100px;
+  display: block;
+}
+
+.quote-title-amount:nth-child(2) {
+  width: 886px;
+  display: block;
+}
+
+.quote-title-amount:nth-child(3) {
+  width: 938;
+  display: block;
 }
 
 .quote-name {
