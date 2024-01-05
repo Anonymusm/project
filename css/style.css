@@ -7,9 +7,13 @@
 }
 
 .container {
-  width: 1062px;
+  width: 1060px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,
@@ -101,6 +105,8 @@ a {
   padding: 9px 38px 8px 38px;
   margin-left: 210px;
   margin-right: 47px;
+  width: 141px;
+  display: block;
 
   background: var(--btn-bg-color);
   color: var(--main-color);
@@ -113,32 +119,129 @@ a {
   padding: 9px 37px 8px 36px;
 }
 
+.header-btn-eng-amount {
+  width: 65px;
+  display: block;
+}
+
 .btn-eng-amount {
   width: 68px;
   display: block;
 }
 
-.header-language-list {
-  display: flex;
-  column-gap: 20px;
-  width: 107px;
+.language-info {
+  color: var(--text-color);
+    font-family: Hammersmith One;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
-.header-language-item {
-  background-color: var(--text-color);
-  padding: 8px;
-  border-radius: 15px;
+/* switcher (don't my) */
+
+.check {
+  position: relative;
+  border: 2px solid var(--text-color);
+  line-height: 0;
+  font-size: 25px;
+  margin: 0 10px;
 }
 
-.header-language-item:hover {
-  box-shadow: -2px 3px 7px 1px rgb(26, 255, 26);
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after {
+  appearance: none;
+  display: inline-block;
+  font-size: inherit;
+  border-radius: 1em;
+  border: 0;
+  transition: 0.35s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.header-language-link {
-  color: var(--accent-color);
-  font-family: Hammersmith One, sans-serif;
-  line-height: 1.25;
+.check {
+  appearance: none;
+  display: inline-block;
+  border-radius: 1em;
+  transition: 0.35s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
 }
+
+.check label {
+  width: 2.2em;
+  height: 1em;
+  background: transparent;
+  overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+  width: 0.8em;
+  height: 0.8em;
+  top: 0.1em;
+  left: 0.1em;
+  background: #fff;
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+  left: 1.3em;
+}
+
+.check input[type="checkbox"]:checked + label {
+  background: rgb(48, 87, 255);
+}
+
+.check label::before,
+.check label::after {
+  content: "· ·";
+  position: absolute;
+  overflow: hidden;
+  left: 0.5em;
+  top: 0.5em;
+  height: 1em;
+  letter-spacing: -0.04em;
+  color: #9b9b9b;
+  font-family: "Times New Roman", serif;
+  z-index: 2;
+  font-size: 0.6em;
+  border-radius: 0;
+  transform-origin: 0 0 -0.5em;
+  backface-visibility: hidden;
+}
+
+.check label::after {
+  content: "?";
+  top: 0.65em;
+  left: 0.6em;
+  height: 0.1em;
+  width: 0.35em;
+  font-size: 0.2em;
+  transform-origin: 0 0 -0.4em;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+  left: 2.55em;
+  top: 0.4em;
+  line-height: 0.1em;
+  transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+  height: 0.16em;
+  top: 0.55em;
+  left: 2.6em;
+  font-size: 0.6em;
+  line-height: 0;
+}
+
+/* hero */
 
 .hero {
   padding: 180px 0;
@@ -202,6 +305,7 @@ a {
   margin-top: 42px;
   border-radius: 45px 0px;
   border: 3px solid var(--main-color);
+  width: 260px;
 
   background: var(--btn-bg-color);
   color: var(--main-color);
@@ -211,18 +315,16 @@ a {
   line-height: 1.25;
 }
 
-.btn-amount {
-  width: 199px;
-  display: block;
-}
-
-.hero .btn-eng-amount {
-  width: 111px;
-}
-
 .hero-eng-btn {
   padding: 25px 75px;
 }
+
+.hero-btn-eng-amount {
+  width: 111px;
+  display: block;
+}
+
+/* quote */
 
 .quote {
   padding-top: 75px;
@@ -238,21 +340,6 @@ a {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.222;
-}
-
-.quote-title-amount:nth-child(1) {
-  width: 1100px;
-  display: block;
-}
-
-.quote-title-amount:nth-child(2) {
-  width: 886px;
-  display: block;
-}
-
-.quote-title-amount:nth-child(3) {
-  width: 802px;
-  display: block;
 }
 
 .quote-name {
@@ -277,6 +364,8 @@ a {
   background-image: url(../images/symbol-bird.png);
   background-repeat: no-repeat;
 }
+
+/* trailer */
 
 .trailer {
   padding: 330px 0;
@@ -308,6 +397,8 @@ a {
 .trailer-eng-link {
   padding: 25px 17px;
 }
+
+/* language */
 
 .language {
   max-width: 1540px;
@@ -341,7 +432,7 @@ a {
 
 .language-item {
   padding: 36px 0;
-  flex-basis: 311px;
+  flex-basis: calc(100% / 3 - 36px);
 
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -411,10 +502,12 @@ a {
   line-height: 1;
 }
 
+/* footer */
+
 .footer {
   max-width: 1540px;
   margin: 0 auto;
-  padding-top: 77px;
+  padding-top: 35px;
   padding-bottom: 25px;
 
   background-image: linear-gradient(
@@ -429,20 +522,27 @@ a {
 
 .footer-position {
   display: flex;
-  align-items: center;
-  justify-content: start;
+align-items: center;
+justify-content: center;
 }
 
 .footer .logo {
   margin-right: 80px;
 }
 
-.logo-wrapper {
-  border-right: 2px solid var(--text-color);
+.logo-wrapper::after {
+  content: "";
+  background-color: #fff;
+  display: block;
+  height: 153px;
+  width: 2px;
+}
+
+ .logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 
 .footer-item {
   display: flex;
@@ -478,8 +578,6 @@ a {
 }
 
 .copy {
-  margin-top: 37px;
-
   text-align: center;
   color: var(--text-color);
   font-family: Inter, sans-serif;
