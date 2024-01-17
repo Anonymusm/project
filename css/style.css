@@ -89,7 +89,7 @@ a {
 
 .navigation-link {
   color: var(--text-color);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
@@ -110,7 +110,7 @@ a {
 
   background: var(--btn-bg-color);
   color: var(--main-color);
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 20px;
   line-height: 1.25;
 }
@@ -131,10 +131,10 @@ a {
 
 .language-info {
   color: var(--text-color);
-    font-family: Hammersmith One;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
+  font-family: "Hammersmith One";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
 }
 
 /* switcher (don't my) */
@@ -261,7 +261,7 @@ a {
 .hero-text,
 .hero-translate-text {
   color: var(--text-color);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -309,7 +309,7 @@ a {
 
   background: var(--btn-bg-color);
   color: var(--main-color);
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
@@ -336,7 +336,7 @@ a {
 
   color: var(--add-color);
   text-align: center;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.222;
@@ -347,7 +347,7 @@ a {
 
   color: var(--accent-color);
   text-align: center;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.208;
@@ -389,7 +389,7 @@ a {
 
   background: var(--btn-bg-color);
   color: var(--main-color);
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 24px;
   line-height: 1.25;
 }
@@ -415,7 +415,7 @@ a {
 
   color: var(--add-color);
   text-align: center;
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
@@ -485,7 +485,7 @@ a {
 
   color: var(--add-color);
   text-align: center;
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -496,7 +496,7 @@ a {
 
   color: var(--accent-color);
   text-align: center;
-  font-family: HeadlandOne, sans-serif;
+  font-family: "HeadlandOne", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -522,8 +522,8 @@ a {
 
 .footer-position {
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .logo {
@@ -538,11 +538,11 @@ justify-content: center;
   width: 2px;
 }
 
- .logo-wrapper {
+.logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .footer-item {
   display: flex;
@@ -562,7 +562,7 @@ justify-content: center;
   padding-left: 80px;
 
   color: var(--text-color);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -571,17 +571,146 @@ justify-content: center;
   margin-left: 20px;
 
   color: var(--text-color);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .copy {
-  text-align: center;
+  padding-left: 45%;
   color: var(--text-color);
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.21;
 }
+
+.we {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(43, 74, 97, 0.8),
+      rgba(0, 0, 0, 0.7),
+      rgba(43, 74, 97, 0.8)
+    ),
+    url("../images/about-us-bg.png");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1540px;
+  border-bottom: 3px solid var(--text-color);
+}
+
+.we-wrapper {
+  border: 2px solid #9b9b9b;
+  width: 450px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background: linear-gradient(
+    to top left,
+    rgba(190, 171, 171, 0.8),
+    rgba(43, 74, 97, 0.8)
+  );
+}
+
+.we-logo-info {
+  width: 290px;
+}
+
+.we-item:nth-child(-n + 2) {
+  margin-bottom: 50px;
+}
+
+.we-title {
+  font-family: "Lemon", serif;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 25px;
+}
+
+.we-logo-info {
+  color: #d7cdcd;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.film-info-item:first-child {
+  margin-bottom: 30px;
+}
+
+.film-info-item {
+  display: flex;
+}
+
+.we-help-link {
+  padding-left: 20px;
+  color: var(--text-color);
+}
+
+.we-help-link:hover {
+  color: var(--main-color);
+}
+
+.film-title {
+  color: #f5f7fa;
+  margin-bottom: 25px;
+}
+
+.film-text {
+  width: 300px;
+
+  color: #bcbcbc;
+}
+
+.we-text {
+  font-family: "HeadlandOne", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #bd9b9b;
+}
+
+.we-text::after {
+  content: "";
+  background-image: url("../images/bottom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.film-list {
+  list-style: circle;
+  padding-left: 25%;
+  margin-top: 35px;
+}
+
+.we-item-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #c5c5c5;
+}
+
+.we-help-title:not(.film-title) {
+  color: var(--add-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.222;
+}
+
+.website-title {
+  margin-bottom: 14px;
+}
+
+.website-link {
+  color: #fff;
+}
+
+.website-link:hover {
+  color: var(--main-color);
+} 
